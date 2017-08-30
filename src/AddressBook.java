@@ -491,7 +491,7 @@ public class AddressBook {
                // System.out.println("Word in name are: "+ wordInName);
                 for (String keyword: keywords)
                 {
-                    if(wordInName.equalsIgnoreCase(keyword))
+                    if(wordInName.equalsIgnoreCase(keyword) || (wordInName.charAt(0) == keyword.charAt(0)))
                     {
                         //previous problem: keyword search didnt ignore case for user added
                         //add in ignorecase for keyword search
